@@ -104,9 +104,9 @@ h5 {
 }
 	
 .mainbckgrndimg {
-	background-image: url("backgroundimage6.png");
-    background-repeat: no-repeat;
-    background-size: auto;
+	background-image: url("backgroundimgrepeat.jpg");
+    background-repeat: repeat;
+    background-size: 100%;
 }
 	
 .hometitle {
@@ -176,9 +176,9 @@ h5 {
 
 /* Work Page */
 	.workpg {
-	background-image: url("backgroundimagework.png");
-    background-repeat: no-repeat;
-    background-size: auto;
+	background-image: url("backgroundimgrepeat.jpg");
+    background-repeat: repeat;
+    background-size: 100%;
 }
 	.workpg h1 {
 		font-family: "Source Sans Pro", sans-serif;
@@ -203,6 +203,9 @@ h5 {
 		line-height: 12px;
 		font-weight: normal;
 }
+	.shadow {
+		box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 0 40px 0 rgba(0, 0, 0, 0.16);
+	}
 	
 /* Responsive Design */
 
@@ -220,19 +223,19 @@ h5 {
   <div class="logoimg"><img src="logoawwhite.png" alt="AW - Alexis Williams" width="150" height="100%"></div>
   <div class="sidenav2top">
 	  <div><a href="#"><i class="fas fa-home" style="font-size:20px;color:#e1e2e4;"></i></a></div>
-	  <div><a href="#">Home</a></div>
+	  <div><a href="#home">Home</a></div>
 	</div>
   <div class="sidenav2">
 	  <div><a href="#"><i class="fas fa-user-alt" style="font-size:20px;color:#e1e2e4;"></i></a></div>
-	  <div><a href="#">About</a></div>
+	  <div><a href="#about">About</a></div>
 	</div>
   <div class="sidenav2">
 	  <div><a href="#"><i class="fas fa-briefcase" style="font-size:20px;color:#e1e2e4;"></i></a></div>
-	  <div><a href="#">Work</a></div>
+	  <div><a href="#work">Work</a></div>
 	</div>
   <div class="sidenav2">
 	  <div><a href="#"><i class="far fa-lightbulb" style="font-size:20px;color:#e1e2e4;"></i></a></div>
-	  <div><a href="#">Experience</a></div>
+	  <div><a href="#experience">Experience</a></div>
 	</div>
   <div class="sidenav2">
 	  <div><a href="#"><i class="far fa-chart-bar" style="font-size:20px;color:#e1e2e4;"></i></a></div>
@@ -249,7 +252,7 @@ h5 {
 
 <div class="main">
 <!-- Home Page -->
-  <table width="100%" class="mainbckgrndimg">
+  <table id="home" width="100%" class="mainbckgrndimg">
 	<tbody>
 	  <tr>
 		<td width="50%" style="text-align: center;">
@@ -259,13 +262,13 @@ h5 {
 		 <h1 class="hometitle">CONNECTING WITH <br /> OTHERS TRHOUGH DESIGN.</h1>
 		 <h1 class="hometitle">CREATIVE THINKING <br /> MADE VISUAL.</h1>
          <p class="hometitle2">Alexis Williams | Website Designer</p>
-		 <a class="btns" href="#"><i class="fas fa-angle-down"></i> ABOUT ME</a>
+		 <a class="btns" href="#about"><i class="fas fa-angle-down"></i> ABOUT ME</a>
 		</td>
 	  </tr>
 	 </tbody>
 	</table>
 <!-- About Me Page -->
-  <table class="aboutmepg" width="100%" >
+  <table id="about" class="aboutmepg" width="100%" >
 	<tbody>
 	  <tr>
 		<td width="60%" style="padding:0px 100px;">
@@ -273,7 +276,7 @@ h5 {
 		 <h2>Striving For The Client’s Happiness.</h2>
 	     <h3>“Design can be art. Design can be simple. That’s why it’s so complicated.” –Paul Rand</h3>
          <p>I am a 22-year-old, detail-orientated creative designer with experience in many skills that fall under UI/UX design, web design, responsive design, and marketing. I enjoy adding more to my skill set by being a quick learner over the 4 years in my professional career. I work hard to ensure that every project is completed in a time orderly matter. I have taught many clients from different walks of life how to edit the content on their WordPress sites. I handle each interaction with a professional and personal touch. </p>
-		 <a class="btns" href="#"><i class="fas fa-angle-down"></i> WORK</a>
+		 <a class="btns" href="#work"><i class="fas fa-angle-down"></i> WORK</a>
 		</td>
 		<td width="40%" style="text-align: center;">
 		 <img src="aboutmeimage.png" width="100%" height="100%" >
@@ -282,7 +285,7 @@ h5 {
 	 </tbody>
 	</table>
 <!-- Work Page -->
-  <table class="workpg" width="100%" >
+  <table id="work" class="workpg" width="100%" >
 	<tbody>
 	  <tr>
 		<td style="padding:0px 50px; text-align: center;">
@@ -292,49 +295,49 @@ h5 {
 			<tbody>
 				<tr style="text-align: center;">
 				  <td style="padding: 20px 0px 20px 0px;">
-					  <img src="boximages.png" width="100%" height="100%" >
-					  <h4>What it is</h4>
+					  <img class="shadow" src="apboximage.jpg" width="100%" height="100%" >
+					  <h4>Agent Pipeline</h4>
 				  </td>
 				  <td style="padding: 20px 0px 20px 20px;">
-					  <img src="boximages.png" width="100%" height="100%" >
-					  <h4>What it is</h4>
+					  <img class="shadow" src="cjhughesboximage.jpg" width="100%" height="100%" >
+					  <h4>CJ Hughes</h4>
 				  </td>
 				  <td style="padding: 20px 0px 20px 20px;">
-					  <img src="boximages.png" width="100%" height="100%" >
-					  <h4>What it is</h4>
+					  <img class="shadow" src="cuboximage.jpg" width="100%" height="100%" >
+					  <h4>Concord University</h4>
 				  </td>
 				  <td style="padding: 20px 0px 20px 20px;">
-					  <img src="boximages.png" width="100%" height="100%" >
-					  <h4>What it is</h4>
+					  <img class="shadow" src="gbrboximage.jpg" width="100%" height="100%" >
+					  <h4>Greenbrier Resort</h4>
 				  </td>
 				</tr>
 				<tr style="text-align: center;">
 				  <td style="padding: 0px 0px 20px 0px;">
-					  <img src="boximages.png" width="100%" height="100%" >
-					  <h4>What it is</h4>
+					  <img class="shadow" src="piogaboximage.jpg" width="100%" height="100%" >
+					  <h4>PIOGA</h4>
 				  </td>
 				  <td style="padding: 0px 0px 20px 20px;">
-					  <img src="boximages.png" width="100%" height="100%" >
-					  <h4>What it is</h4>
+					  <img class="shadow" src="rlboximage.jpg" width="100%" height="100%" >
+					  <h4>Ranson Law Offices</h4>
 				  </td>
 				  <td style="padding: 0px 0px 20px 20px;">
-					  <img src="boximages.png" width="100%" height="100%" >
-					  <h4>What it is</h4>
+					  <img class="shadow" src="slboximage.jpg" width="100%" height="100%" >
+					  <h4>Spilman Law</h4>
 				  </td>
 				  <td style="padding: 0px 0px 20px 20px;">
-					  <img src="boximages.png" width="100%" height="100%" >
-					  <h4>What it is</h4>
+					  <img class="shadow" src="wvkcboximage.jpg" width="100%" height="100%" >
+					  <h4>West Virginia Kids Count</h4>
 				  </td>
 				</tr>
 			</tbody>
 		 </table>
-		<a class="btns" href="#"><i class="fas fa-angle-down"></i> EXPERIENCE</a>
+		<a class="btns" href="#experience"><i class="fas fa-angle-down"></i> EXPERIENCE</a>
 		</td>
 	  </tr>
 	 </tbody>
 	</table>
 <!-- Experience Page -->
-  <table class="aboutmepg" width="100%" >
+  <table id="experience" class="aboutmepg" width="100%" >
 	<tbody>
 	  <tr>
 		<td width="60%" style="padding:0px 100px;">
@@ -373,7 +376,7 @@ management to ensure a project is done in a timely
 manner.</li> 
 		 </ul>
 			
-		 <a class="btns" href="#"><i class="fas fa-angle-down"></i> SKILL</a>
+		 <a class="btns" href="#skill"><i class="fas fa-angle-down"></i> SKILL</a>
 		</td>
 		<td width="40%" style="text-align: center;">
 		 <img src="workexpimage.png" width="100%" height="100%" >
