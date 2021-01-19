@@ -1,0 +1,299 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/5487a496ce.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://fonts.google.com/specimen/Source+Sans+Pro#standard-styles">
+<style>
+	
+/* Whole Site */
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+	
+table {
+	border-spacing: 0 !important;
+	border-collapse: collapse !important;
+	table-layout: fixed !important;
+	margin: 0;
+}
+	
+a { 
+	text-decoration: none;
+}
+	
+a:hover, a:visted, a:active, a:link {
+	color:#3790ba;
+}
+
+p {
+	color:#272727;
+	font-size: 15px;
+}
+h5 {
+    display: block;
+    font-size: 18px;
+    font-weight: normal;
+}
+	
+	/* Side Menu */
+.sidenav {
+  height: 100%;
+  width: 225px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #353d41;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+.sidenav2 {
+  border-top: 1px solid #4d585e;
+  border-bottom: 0px solid #4d585e;
+  padding: 20px 0px;
+ }
+ 
+ .sidenav2top {
+  border-top: 1px solid #4d585e;
+  border-bottom: 0px solid #4d585e;
+  padding: 20px 0px;
+ }
+ 
+ .sidenav2bot {
+  border-top: 1px solid #4d585e;
+  border-bottom: 1px solid #4d585e;
+  padding: 20px 0px;
+ }
+
+.sidenav a {
+  padding: 6px 6px 6px 6px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #e1e2e4; /* font color */
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #3790ba;
+}
+	
+.logoimg {
+	padding-bottom:30px;
+	padding-top:30px;
+}
+
+.fa, .fas {
+    font-weight: 900;
+    font-size: 24px;
+    color: #e1e2e4;
+}
+
+.fa, .fas a:hover {
+    color: #3790ba;
+}
+
+.icons {
+	padding-top:20px;
+}
+
+.main {
+  margin: 0px 0px 0px 215px;/* Same as the width of the sidenav */
+}
+	
+.hometitle {
+	color:#ffffff;
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: 55px;
+	line-height: 50px;
+	text-align: center;
+	letter-spacing: 4px;	
+}
+	
+.hometitle2 {
+	color:#ffffff;
+	font-family: "Source Sans Pro Light", sans-serif;
+    font-size: 32px;
+	line-height: 20px;
+	text-align: center;
+	letter-spacing: 4px;
+	font-weight: 400;
+}	
+	
+.btns {
+	background-color:#3790ba;
+	color:#fff;
+	padding:15px;
+	font-size: 20px;
+	text-decoration: none;
+	text-align:center;
+	line-height: 4;	
+}
+
+.btns .fa, .fas {
+    font-weight: 900;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.shadow {
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.6), 0 0 40px 0 rgba(0, 0, 0, 0.16);
+}
+
+/* Project Page */
+	.projectpg {
+		background-color:#fefefe;
+}
+	.projectpg h1 {
+		font-family: "Source Sans Pro", sans-serif;
+		letter-spacing: 4px;
+		color: #CECFD1;
+        font-size: 55px;
+		line-height: auto;
+		font-weight: 600;
+}
+	
+	.projectpg h2 {
+		font-family: "Source Sans Pro Light", sans-serif;
+		letter-spacing: 4px;
+		color: #272727;
+        font-size: 32px;
+		line-height: auto;
+		font-weight: 400;
+}
+
+	.projectpg h3 {
+		font-family: "Source Sans Pro", sans-serif;
+        font-size: 24px;
+		line-height: auto;
+		font-weight: 400;
+		font-style: italic;
+}
+
+/* Other Projects */
+	.otherprojects {
+	background-image: url("backgroundimgrepeat.jpg");
+    background-repeat: repeat;
+    background-size: 100%;
+}
+	.otherprojects h1 {
+		font-family: "Source Sans Pro", sans-serif;
+		letter-spacing: 4px;
+		color: #ffffff;
+        font-size: 55px;
+		line-height: 20px;
+		font-weight: 600;
+}
+	.otherprojects h2 {
+		font-family: "Source Sans Pro Light", sans-serif;
+		letter-spacing: 4px;
+		color: #272727;
+        font-size: 32px;
+		line-height: 20px;
+		font-weight: 400;
+}
+	.otherprojects h4 {
+		font-family: "Source Sans Pro", sans-serif;
+		color: #272727;
+        font-size: 20px;
+		line-height: 12px;
+		font-weight: normal;
+}
+	
+/* Responsive Design */
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 16px;}
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="sidenav">
+  <div class="logoimg"><img src="logoawwhite.png" alt="AW - Alexis Williams" width="150" height="100%"></div>
+  <div class="sidenav2top">
+	  <div><a href="#"><i class="fas fa-home" style="font-size:20px;color:#e1e2e4;"></i></a></div>
+	  <div><a href="#">Home</a></div>
+	</div>
+  <div class="sidenav2">
+	  <div><a href="#"><i class="fas fa-user-alt" style="font-size:20px;color:#e1e2e4;"></i></a></div>
+	  <div><a href="#">About</a></div>
+	</div>
+  <div class="sidenav2">
+	  <div><a href="#"><i class="fas fa-briefcase" style="font-size:20px;color:#e1e2e4;"></i></a></div>
+	  <div><a href="#">Work</a></div>
+	</div>
+  <div class="sidenav2">
+	  <div><a href="#"><i class="far fa-lightbulb" style="font-size:20px;color:#e1e2e4;"></i></a></div>
+	  <div><a href="#">Experience</a></div>
+	</div>
+  <div class="sidenav2">
+	  <div><a href="#"><i class="far fa-chart-bar" style="font-size:20px;color:#e1e2e4;"></i></a></div>
+	  <div><a href="#">Skill</a></div>
+	</div>
+  <div class="sidenav2bot">
+	  <div><a href="#"><i class="fas fa-phone" style="font-size:20px;color:#e1e2e4;"></i></a></div>
+	  <div><a href="#">Contact</a></div>
+	</div>
+  <div class="icons">
+	  <i style="font-size: 32px; color: #3790ba;" class="fab fa-linkedin"></i> <i style="font-size: 30px; color: #3790ba; padding-left:15px;" class="fas fa-file-download"></i>
+	</div>
+</div>
+
+<div class="main">
+<!-- Project Page -->
+  <table class="projectpg" width="100%" >
+	<tbody>
+	  <tr>
+		<td width="40%" style="padding:0px 30px;">
+		 <h1>GREENBRIER RESORT.</h1>
+         <p>The luxurious Greenbrier Resort was a challenge to design because they wanted a unique website header and activity calendar. I designed a one of a kind header displaying the resort's phone number, other call to actions, links to additional related websites, and a menu with mouse over image changes. There are interactive features throughout the website to engage with the visitor to learn more about the opulent resort and all the amenities. Activities are displayed in a card-style view with an interactive filter to narrow the choices to find your next adventure. The daily calendar features one optional event that randomly loads from alql of the available events. The visitor can choose the day they are staying from a small graphical calendar. All of the planned activities for that day are displayed. Additional activities are displayed on the right side of the page. All ASP website designs are responsive and display the same website information on mobile phones and tablets.</p>
+		</td>
+		<td width="60%" style="text-align: center; padding: 30px;">
+		 <img class="shadow" src="GBRwebsitefinal.jpg" width="100%" height="100%" >
+		</td>
+	  </tr>
+	 </tbody>
+	</table>
+<!-- Other Projects -->
+  <table class="otherprojects" width="100%" >
+	<tbody>
+	  <tr>
+		<td style="padding:0px 50px; text-align: center;">
+		 <h1 class="" style="text-align: center;">Other Projects.</h1>
+		 
+		 <table style=" margin-left: auto; margin-right: auto;">
+			<tbody>
+				<tr style="text-align: center;">
+				  <td style="padding: 0px 0px 20px 0px;">
+					  <img class="shadow" src="piogaboximage.jpg" width="100%" height="100%" >
+					  <h4>PIOGA</h4>
+				  </td>
+				  <td style="padding: 0px 0px 20px 20px;">
+					  <img class="shadow" src="rlboximage.jpg" width="100%" height="100%" >
+					  <h4>Ranson Law Offices</h4>
+				  </td>
+				  <td style="padding: 0px 0px 20px 20px;">
+					  <img class="shadow" src="slboximage.jpg" width="100%" height="100%" >
+					  <h4>Spilman Law</h4>
+				  </td>
+				  <td style="padding: 0px 0px 20px 20px;">
+					  <img class="shadow" src="wvkcboximage.jpg" width="100%" height="100%" >
+					  <h4>West Virginia Kids Count</h4>
+				  </td>
+				</tr>
+			</tbody>
+		 </table>
+			
+		</td>
+	  </tr>
+	 </tbody>
+	</table>
+</div>
+   
+</body>
+</html>
