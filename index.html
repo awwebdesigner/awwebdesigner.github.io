@@ -1,9 +1,29 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="https://kit.fontawesome.com/5487a496ce.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://fonts.google.com/specimen/Source+Sans+Pro#standard-styles">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="/resources/demos/style.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+  $( function() {
+    $( "#progressbar1" ).progressbar({
+      value: 85
+    });
+  } );
+</script>
+<script>
+  $( function() {
+    $( "#progressbar2" ).progressbar({
+      value: 60
+    });
+  } );
+</script>
 <style>
 	
 /* Whole Site */
@@ -342,38 +362,32 @@ h5 {
 	  <tr>
 		<td width="60%" style="padding:0px 100px;">
 		 <h1>WORK EXPERIENCE.</h1>
-		 <h2>Striving For The Client’s Happiness.</h2>
-         <h5><b>Marketing Assistant</b><br />
+		 <h2>My Passion is my Job.</h2>
+         <h5><b>Website Designer</b><br />
 		 Agent Pipeline / Medicare Pathways<br />
 		 <i>03/2020 to Now - Saint Albans, WV</i></h5>
 		 <ul>
-		     <li>Design and create email marketing templates from scratch
-		    using CSS and HTML in Dreamweaver or using Mailchimp.</li>
-			 <li>Write B2C & B2B content for multiple website blogs.</li>
-			 <li>Create graphics and content for social media such as
-		     Facebook, Youtube, Instagram, and LinkedIn.</li>
+		     <li>Design and create email marketing templates from scratch <br>
+				 using CSS and HTML in Dreamweaver or using Mailchimp.</li>
+			 <li>Write B2C &amp; B2B content for multiple website blogs.</li>
+			 <li>Create graphics and content for social media such as <br>
+				 Facebook, Youtube, Instagram, and LinkedIn.</li>
 			 <li>Create graphics for insurance agents to use as marketing
-			 materials.</li>
-			 <li>Maintain the website by cleaning up media library, pages,
-			 posts, adding SEO, new useful plug-ins, new blog posts, and
-			 new lead generation pages.</li> 
+			 	 materials.</li>
+			 <li>Maintain the website by cleaning up media library, pages, posts, adding SEO, <br>
+				 new useful plug-ins, new blog posts, and new lead generation pages.</li> 
+			 <li>Create custom built pages for the website to showcase specific content. <br>
+				 It includes a custom made menu separate from the main menu using HTML &amp; CSS. </li> 
 		 </ul>
 <h5><b>Website Designer</b><br />
 Associated Systems Professionals<br />
 	<i>12/2016 to 02/2020 - South Charleston, WV</i></h5>
 		 <ul>
-		     <li>Designed websites using professional applications in the
-Adobe Creative Cloud Suite.</li>
-			 <li>Developed websites using knowledge of HTML5, CSS3,
-Wordpress, and Avada.</li>
-			 <li>Designed websites to be functional, modern, user-friendly,
-mobile-friendly, and custom to the client.</li>
-			 <li>Trained clients on how to use WordPress with Avada.
-Communicated with clients about projects, or assist in
-updating the clients' website.</li>
-			 <li>Worked efficiently and professionally with coworkers and
-management to ensure a project is done in a timely
-manner.</li> 
+		     <li>Designed websites using professional applications in the Adobe Creative Cloud Suite.</li>
+			 <li>Developed websites using knowledge of HTML5, CSS3, Wordpress, and Avada.</li>
+			 <li>Designed websites to be functional, modern, user-friendly, mobile-friendly, and custom to the client.</li>
+			 <li>Trained clients on how to use WordPress with Avada. Communicated with clients about projects, or assist in updating the clients' website.</li>
+			 <li>Worked efficiently and professionally with coworkers and management to ensure a project is done in a timely manner.</li> 
 		 </ul>
 			
 		 <a class="btns" href="#skill"><i class="fas fa-angle-down"></i> SKILL</a>
@@ -388,32 +402,26 @@ manner.</li>
   <table id="skills" class="workpg" width="100%" >
 	<tbody>
 	  <tr>
-		<td style="padding:0px 50px; text-align: center;">
+		<td style="padding:0px 50px;">
 		 <h1 class="" style="text-align: center;">MY SKILLS.</h1>
-		 <h2 class="">Resuls Driven By Passion.</h2>
+		 <h2 class="" style="text-align: center;">Resuls Driven By Hard Work &amp; Passion.</h2>
 		 <table style=" margin-left: auto; margin-right: auto;">
 			<tbody>
-				<tr style="text-align: center;">
-				  <td style="padding: 20px 0px 20px 0px;">
-					  <img class="shadow" src="apboximage.jpg" width="100%" height="100%" >
-					  <h4>Agent Pipeline</h4>
+				<tr>
+				  <td style="padding: 0px 0px 0px 0px;">
+					  <h3>Website Design</h3> 
+					  <div id="progressbar1"></div>	 
 				  </td>
-				  <td style="padding: 20px 0px 20px 20px;">
-					  <img class="shadow" src="cjhughesboximage.jpg" width="100%" height="100%" >
-					  <h4>CJ Hughes</h4>
-				  </td>
-				  <td style="padding: 20px 0px 20px 20px;">
-					  <img class="shadow" src="cuboximage.jpg" width="100%" height="100%" >
-					  <h4>Concord University</h4>
-				  </td>
-				  <td style="padding: 20px 0px 20px 20px;">
-					  <img class="shadow" src="gbrboximage.jpg" width="100%" height="100%" >
-					  <h4>Greenbrier Resort</h4>
+				</tr>
+				<tr>
+				  <td style="padding: 0px 0px 20px 0px;">
+					  <h3>Some Skill</h3> 
+					  <div id="progressbar2"></div>	 
 				  </td>
 				</tr>
 			</tbody>
 		 </table>
-		<a class="btns" href="#contact"><i class="fas fa-angle-down"></i> CONTACT ME</a>
+		<div style="text-align: center;"><a class="btns" href="#contact" ><i class="fas fa-angle-down"></i> CONTACT ME</a></div>
 		</td>
 	  </tr>
 	 </tbody>
@@ -425,9 +433,13 @@ manner.</li>
 	  <tr>
 		<td width="60%" style="padding:0px 100px;">
 		 <h1>CONTACT ME.</h1>
-		 <h2>There Are Many Ways You Can.</h2>
-			
-		 <a class="btns" href="#">CONTACT ME</a>
+		 <h2>Get in Touch.</h2>
+			<div>
+				Contact Information
+			</div>
+			<div class="icons">
+	  		<i style="font-size: 50px; color: #3790ba;" class="fab fa-linkedin"></i> <i style="font-size: 50px; color: #3790ba; padding-left:15px;" class="fas fa-file-download"></i>
+			</div>
 		</td>
 		<td width="40%" style="text-align: center;">
 		 <img src="workexpimage.png" width="100%" height="100%" >
