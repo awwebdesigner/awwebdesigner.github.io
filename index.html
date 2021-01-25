@@ -26,7 +26,6 @@ table {
 	border-collapse: collapse !important;
 	table-layout: fixed !important;
 	margin: 0 !important;
-	padding: 0 !important;
 }
 	
 a { 
@@ -38,7 +37,7 @@ a:hover, a:visted, a:active, a:link {
 }
 
 p {
-	color:#272727;
+	color:#272727; /* body font color */
 	font-size: 15px;
 }
 h5 {
@@ -47,7 +46,15 @@ h5 {
     font-weight: normal;
 }
 	
-	/* Side Menu */
+/* Side Menu */
+.sidenav p {
+    text-decoration: none;
+    font-size: 20px;
+	line-height: 15px; 
+    color: #e1e2e4; /* menu font color */
+    display: block;	
+}
+	
 .sidenav {
   height: 100%;
   width: 225px;
@@ -77,14 +84,6 @@ h5 {
   border-bottom: 1px solid #4d585e;
   padding: 20px 0px;
  }
-
-.sidenav a {
-  padding: 6px 6px 6px 6px;
-  text-decoration: none;
-  font-size: 20px;
-  color: #e1e2e4; /* font color */
-  display: block;
-}
 
 .sidenav a:hover {
   color: #3790ba;
@@ -219,7 +218,36 @@ h5 {
 	}
 	
 /* Skills Page */
-
+	.skillspg {
+	background-image: url("backgroundimgrepeat.jpg");
+    background-repeat: repeat;
+    background-size: 100%;
+	padding: 30px;
+}
+	.skillspg h1 {
+		font-family: "Source Sans Pro", sans-serif;
+		letter-spacing: 4px;
+		color: #ffffff;
+        font-size: 55px;
+		line-height: 20px;
+		font-weight: 600;
+}
+	.skillspg h2 {
+		font-family: "Source Sans Pro Light", sans-serif;
+		letter-spacing: 4px;
+		color: #272727;
+        font-size: 32px;
+		line-height: 20px;
+		font-weight: 400;
+}
+	.skillspg h4 {
+		font-family: "Source Sans Pro", sans-serif;
+		color: #272727;
+        font-size: 20px;
+		line-height: 12px;
+		font-weight: normal;
+}
+	
 .skillbar {
 	position:relative;
 	display:block;
@@ -276,7 +304,7 @@ width:110px;
 .skillbar-bar {
 	height:35px;
 	width:0px;
-	background:#6adcfa;
+	background:#e1e2e4;
 	border-radius:3px;
 	-moz-border-radius:3px;
 	-webkit-border-radius:3px;
@@ -289,8 +317,7 @@ width:110px;
 	font-size:11px;
 	height:35px;
 	line-height:35px;
-	color:#ffffff;
-	color:rgba(0, 0, 0, 0.4);
+	color:#000;
 }
 
 /* Responsive Design */
@@ -307,30 +334,30 @@ width:110px;
 
 <div class="sidenav">
   <div class="logoimg"><img src="logoawwhite.png" alt="AW - Alexis Williams" width="150" height="100%"></div>
-  <div class="sidenav2top">
-	  <div><a href="#"><i class="fas fa-home" style="font-size:20px;color:#e1e2e4;"></i></a></div>
-	  <div><a href="#home">Home</a></div>
-	</div>
-  <div class="sidenav2">
-	  <div><a href="#"><i class="fas fa-user-alt" style="font-size:20px;color:#e1e2e4;"></i></a></div>
-	  <div><a href="#about">About</a></div>
-	</div>
-  <div class="sidenav2">
-	  <div><a href="#"><i class="fas fa-briefcase" style="font-size:20px;color:#e1e2e4;"></i></a></div>
-	  <div><a href="#work">Work</a></div>
-	</div>
-  <div class="sidenav2">
-	  <div><a href="#"><i class="far fa-lightbulb" style="font-size:20px;color:#e1e2e4;"></i></a></div>
-	  <div><a href="#experience">Experience</a></div>
-	</div>
-  <div class="sidenav2">
-	  <div><a href="#"><i class="far fa-chart-bar" style="font-size:20px;color:#e1e2e4;"></i></a></div>
-	  <div><a href="#skills">Skills</a></div>
-	</div>
-  <div class="sidenav2bot">
-	  <div><a href="#"><i class="fas fa-phone" style="font-size:20px;color:#e1e2e4;"></i></a></div>
-	  <div><a href="#contact">Contact</a></div>
-	</div>
+  <div class="sidenav2top"><a href="#home">
+	  <p><i class="fas fa-home" style="font-size:20px; color:#e1e2e4;"></i></p>
+	  <p>Home</p>
+	</a></div>
+  <div class="sidenav2"><a href="#about">
+	  <p><i class="fas fa-user-alt" style="font-size:20px; color:#e1e2e4;"></i></p>
+	  <p>About</p>
+	</a></div>
+  <div class="sidenav2"><a href="#work">
+	  <p><i class="fas fa-briefcase"></i></p>
+	  <p>Work</p>
+	</a></div>
+  <div class="sidenav2"><a href="#experience">
+	  <p><i class="far fa-lightbulb"></i></p>
+	  <p>Experience</p>
+	</a></div>
+  <div class="sidenav2"><a href="#skills">
+	  <p><i class="far fa-chart-bar"></i></p>
+	  <p>Skills</p>
+	</a></div>
+  <div class="sidenav2bot"><a href="#contact">
+	  <p><i class="fas fa-phone"></i></p>
+	  <p>Contact</p>
+	</a></div>
   <div class="icons">
 	  <i style="font-size: 32px; color: #3790ba;" class="fab fa-linkedin"></i> <i style="font-size: 30px; color: #3790ba; padding-left:15px;" class="fas fa-file-download"></i>
 	</div>
@@ -465,39 +492,36 @@ Associated Systems Professionals<br />
 	 </tbody>
 	</table>
 <!-- Skills Page -->
-  <table id="skills" class="workpg" width="100%" >
-	<tbody>
-	  <tr>
-		<td style="padding:0px 50px;">
-		 <h1 class="" style="text-align: center;">MY SKILLS.</h1>
-		 <h2 class="" style="text-align: center;">Results Driven By Hard Work &amp; Passion.</h2>
-		 <table style=" margin-left: auto; margin-right: auto;">
-			<tbody>
-				<tr>
-				  <td style="padding: 0px;">
-<div class="skillbar clearfix " data-percent="20%">
-	<div class="skillbar-title" style="background: #307DA1;"><span>HTML5</span></div>
-	<div class="skillbar-bar" style="background: #3790ba;"></div>
-	<div class="skill-bar-percent">20%</div>
-</div> <!-- End Skill Bar -->
-				  </td>
-				</tr>
-				<tr>
-				  <td style="padding: 0px;">
-<div class="skillbar clearfix " data-percent="25%">
-	<div class="skillbar-title" style="background: #307DA1;"><span>CSS3</span></div>
-	<div class="skillbar-bar" style="background: #3498db;"></div>
-	<div class="skill-bar-percent">25%</div>
-</div> <!-- End Skill Bar -->
-				  </td>
-				</tr>
-			</tbody>
-		 </table>
-		<div style="text-align: center;"><a class="btns" href="#contact" ><i class="fas fa-angle-down"></i> CONTACT ME</a></div>
-		</td>
-	  </tr>
-	 </tbody>
-	</table>
+  <div id="skills" class="skillspg" width="100%" height="100%" >
+		<div><h1 class="" style="text-align: center;">MY SKILLS.</h1></div>
+		 <div style="padding-bottom:20px;"><h2 class="" style="text-align: center;">Results Driven By Hard Work &amp; Passion.</h2></div>
+	  
+			<div class="skillbar clearfix " data-percent="20%">
+				<div class="skillbar-title" style="background: #307DA1;"><span>HTML5</span></div>
+				<div class="skillbar-bar" style="background: #3790ba;"></div>
+				<div class="skill-bar-percent">20%</div>
+			</div> <!-- End Skill Bar -->
+				 
+			<div class="skillbar clearfix " data-percent="25%">
+				<div class="skillbar-title" style="background: #307DA1;"><span>CSS3</span></div>
+				<div class="skillbar-bar" style="background: #3498db;"></div>
+				<div class="skill-bar-percent">25%</div>
+			</div> <!-- End Skill Bar -->
+	  
+			<div class="skillbar clearfix " data-percent="25%">
+				<div class="skillbar-title" style="background: #307DA1;"><span>WordPress</span></div>
+				<div class="skillbar-bar" style="background: #3498db;"></div>
+				<div class="skill-bar-percent">25%</div>
+			</div> <!-- End Skill Bar -->
+	  
+			<div class="skillbar clearfix " data-percent="25%">
+				<div class="skillbar-title" style="background: #307DA1;"><span>CSS3</span></div>
+				<div class="skillbar-bar" style="background: #3498db;"></div>
+				<div class="skill-bar-percent">25%</div>
+			</div> <!-- End Skill Bar -->
+	  
+		<div style="text-align: center; margin-top:20px;"><a class="btns" href="#contact" ><i class="fas fa-angle-down"></i> CONTACT ME</a></div>
+	</div>
 	
 <!-- Contact Page -->
  <table id="contact" class="aboutmepg" width="100%" >
