@@ -25,7 +25,7 @@ table {
 	border-spacing: 0 !important;
 	border-collapse: collapse !important;
 	table-layout: fixed !important;
-	margin: 0 !important;
+	margin: 0;
 }
 	
 a { 
@@ -38,7 +38,7 @@ a:hover, a:visted, a:active, a:link {
 
 p {
 	color:#272727; /* body font color */
-	font-size: 15px;
+	font-size: 16px;
 }
 h5 {
     display: block;
@@ -104,14 +104,13 @@ h5 {
 
 /* Home */
 .main {
-  margin: 0px 0px 0px 215px;/* Same as the width of the sidenav */
+  margin: 0px 0px 0px 215px !important;/* Same as the width of the sidenav */
 }
 	
 .mainbckgrndimg {
 	background-image: url("backgroundimgrepeat.jpg");
     background-repeat: repeat;
     background-size: 100%;
-	max-height:800px;
 }
 	
 .hometitle {
@@ -213,6 +212,7 @@ h5 {
 	}
 	
 /* Skills Page */
+	
 	.skillspg {
 	background-image: url("backgroundimgrepeat.jpg");
     background-repeat: repeat;
@@ -315,6 +315,36 @@ h5 {
 	color:#000;
 }
 
+/* Contact Page */
+
+	.contactmepg {
+		background-color:#fefefe;
+}
+	.contactmepg h1 {
+		font-family: "Source Sans Pro", sans-serif;
+		letter-spacing: 4px;
+		color: #CECFD1;
+        font-size: 55px;
+		line-height: auto;
+		font-weight: 600;
+}
+	
+	.contactmepg h2 {
+		font-family: "Source Sans Pro Light", sans-serif;
+		letter-spacing: 4px;
+		color: #272727;
+        font-size: 32px;
+		line-height: auto;
+		font-weight: 400;
+}
+
+.contactmepg h3 {
+	font-family: "Source Sans Pro", sans-serif;
+    font-size: 22px;
+	line-height: auto;
+	font-weight:300;
+}
+	
 /* Responsive Design */
 
 @media screen and (max-height: 450px) {
@@ -398,7 +428,7 @@ h5 {
 		 <h2 class="">Recent Projects.</h2>
 		 <table style=" margin-left: auto; margin-right: auto;">
 			<tbody>
-				<tr style="text-align: center;">
+				<tr style="text-align:center;">
 				  <td style="padding: 20px 0px 20px 0px;">
 					  <a href="/agentpipeline.html"><img class="shadow" src="apboximage.jpg" width="100%" height="100%" >
 						  <h4>Agent Pipeline</h4></a>
@@ -534,17 +564,17 @@ Associated Systems Professionals<br />
 	</div>
 	
 <!-- Contact Page -->
- <table id="contact" class="aboutmepg" width="100%" >
+ <table id="contact" class="contactmepg" width="100%" >
 	<tbody>
 	  <tr>
 		<td width="60%" style="padding:0px 100px;">
 		 <h1>CONTACT ME.</h1>
 		 <h2>Get in Touch.</h2>
 			<div>
-				Contact Information
-			</div>
-			<div class="icons">
-	  		<i style="font-size: 50px; color: #3790ba;" class="fab fa-linkedin"></i> <i style="font-size: 50px; color: #3790ba; padding-left:15px;" class="fas fa-file-download"></i>
+				<h3><a href-="mailto: alexis.williams0155@gmail.com"><i class="fas fa-envelope" style="font-size:35px; color:#3790ba; padding-right: 10px;"></i>alexis.williams0155@gmail.com</a></h3>
+				<h3><a href-="tel: 681-945-0155"><i class="fas fa-phone" style="font-size:35px; color:#3790ba; padding-right: 10px;"></i> 681-945-0155</a></h3>
+				<h3><a href-="https://www.linkedin.com/in/alexis-williams-69b41518a"><i style="font-size: 35px; color: #3790ba; padding-right: 10px;" class="fab fa-linkedin"></i>LinkedIn Profile</a></h3>
+				<h3><a href-="#"><i style="font-size: 35px; color: #3790ba; padding-right: 10px;" class="fas fa-file-download"></i>Download Resume</a></h3>
 			</div>
 		</td>
 		<td width="40%" style="text-align: center;">
