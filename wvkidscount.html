@@ -36,7 +36,15 @@ h5 {
     font-weight: normal;
 }
 	
-	/* Side Menu */
+/* Side Menu */
+.sidenav p {
+    text-decoration: none;
+    font-size: 18px;
+	line-height: 12px; 
+    color: #e1e2e4; /* menu font color */
+    display: block;	
+}
+	
 .sidenav {
   height: 100%;
   width: 225px;
@@ -52,29 +60,15 @@ h5 {
 .sidenav2 {
   border-top: 1px solid #4d585e;
   border-bottom: 0px solid #4d585e;
-  padding: 20px 0px;
+  padding: 15px 0px;
  }
  
  .sidenav2top {
   border-top: 1px solid #4d585e;
   border-bottom: 0px solid #4d585e;
-  padding: 20px 0px;
+  padding: 15px 0px;
  }
  
- .sidenav2bot {
-  border-top: 1px solid #4d585e;
-  border-bottom: 1px solid #4d585e;
-  padding: 20px 0px;
- }
-
-.sidenav a {
-  padding: 6px 6px 6px 6px;
-  text-decoration: none;
-  font-size: 20px;
-  color: #e1e2e4; /* font color */
-  display: block;
-}
-
 .sidenav a:hover {
   color: #3790ba;
 }
@@ -215,46 +209,44 @@ h5 {
 
 <div class="sidenav">
   <div class="logoimg"><img src="logoawwhite.png" alt="AW - Alexis Williams" width="150" height="100%"></div>
-  <div class="sidenav2top">
-	  <div><a href="#"><i class="fas fa-home" style="font-size:20px;color:#e1e2e4;"></i></a></div>
-	  <div><a href="#">Home</a></div>
-	</div>
-  <div class="sidenav2">
-	  <div><a href="#"><i class="fas fa-user-alt" style="font-size:20px;color:#e1e2e4;"></i></a></div>
-	  <div><a href="#">About</a></div>
-	</div>
-  <div class="sidenav2">
-	  <div><a href="#"><i class="fas fa-briefcase" style="font-size:20px;color:#e1e2e4;"></i></a></div>
-	  <div><a href="#">Work</a></div>
-	</div>
-  <div class="sidenav2">
-	  <div><a href="#"><i class="far fa-lightbulb" style="font-size:20px;color:#e1e2e4;"></i></a></div>
-	  <div><a href="#">Experience</a></div>
-	</div>
-  <div class="sidenav2">
-	  <div><a href="#"><i class="far fa-chart-bar" style="font-size:20px;color:#e1e2e4;"></i></a></div>
-	  <div><a href="#">Skill</a></div>
-	</div>
-  <div class="sidenav2bot">
-	  <div><a href="#"><i class="fas fa-phone" style="font-size:20px;color:#e1e2e4;"></i></a></div>
-	  <div><a href="#">Contact</a></div>
-	</div>
-  <div class="icons">
-	  <i style="font-size: 32px; color: #3790ba;" class="fab fa-linkedin"></i> <i style="font-size: 30px; color: #3790ba; padding-left:15px;" class="fas fa-file-download"></i>
-	</div>
+  <div class="sidenav2top"><a href="#home">
+	  <p><i class="fas fa-home"></i></p>
+	  <p>Home</p>
+	</a></div>
+  <div class="sidenav2"><a href="#about">
+	  <p><i class="fas fa-user-alt"></i></p>
+	  <p>About</p>
+	</a></div>
+  <div class="sidenav2"><a href="#work">
+	  <p><i class="fas fa-briefcase"></i></p>
+	  <p>Work</p>
+	</a></div>
+  <div class="sidenav2"><a href="#experience">
+	  <p><i class="far fa-lightbulb"></i></p>
+	  <p>Experience</p>
+	</a></div>
+  <div class="sidenav2"><a href="#skills">
+	  <p><i class="far fa-chart-bar"></i></p>
+	  <p>Skills</p>
+	</a></div>
+  <div class="sidenav2"><a href="#contact">
+	  <p><i class="fas fa-phone"></i></p>
+	  <p>Contact</p>
+	</a></div>
 </div>
-
+	
 <div class="main">
 <!-- Project Page -->
   <table class="projectpg" width="100%" >
 	<tbody>
 	  <tr>
 		<td width="40%" style="padding:0px 30px;">
-		 <h1>GREENBRIER RESORT.</h1>
-         <p>The luxurious Greenbrier Resort was a challenge to design because they wanted a unique website header and activity calendar. I designed a one of a kind header displaying the resort's phone number, other call to actions, links to additional related websites, and a menu with mouse over image changes. There are interactive features throughout the website to engage with the visitor to learn more about the opulent resort and all the amenities. Activities are displayed in a card-style view with an interactive filter to narrow the choices to find your next adventure. The daily calendar features one optional event that randomly loads from alql of the available events. The visitor can choose the day they are staying from a small graphical calendar. All of the planned activities for that day are displayed. Additional activities are displayed on the right side of the page. All ASP website designs are responsive and display the same website information on mobile phones and tablets.</p>
+		 <h1>WEST VIRGINIA KIDS COUNT.</h1>
+         <p>WV KIDS COUNT is a non-profit agency in West Virginia that helps policymakers make the best decisions possible. They produce a state-wide Data Book that annually tracks the well-being of children to provide high quality, unbiased information, and encourage action on behalf of kids and families. ASP designed and developed the website to display information about the organization, the partnerships, committees, funders, ambassadors, and legislation information. There are links to download the printed WV Data Book and the National Data Book.<br /><br />
+		 ASP developed the online State Searchable Database. The database allows the visitor to select 16 well-being indicators in four domains that capture what children need to thrive including 1) health, 2) education, 3) economic well-being, and 4) family and community. These align with data indicators from The Annie E. Casey Foundation’s 16 national child well-being indicators. Visitors can view a data list of all West Virginia counties or select a few counties to compare data. There is also a bar chart view of the selected counties. The visitor has options to print the chart, download pdf, jpg, or export to a CSV or excel file.</p>
 		</td>
 		<td width="60%" style="text-align: center; padding: 30px;">
-		 <img class="shadow" src="GBRwebsitefinal.jpg" width="100%" height="100%" >
+		 <img class="shadow" src="WVKCwebsitefinal.jpg" width="100%" height="100%" >
 		</td>
 	  </tr>
 	 </tbody>
@@ -269,21 +261,21 @@ h5 {
 		 <table style=" margin-left: auto; margin-right: auto;">
 			<tbody>
 				<tr style="text-align: center;">
-				  <td style="padding: 0px 0px 20px 0px;">
-					  <img class="shadow" src="piogaboximage.jpg" width="100%" height="100%" >
-					  <h4>PIOGA</h4>
+				  <td style="padding: 20px 0px 20px 0px;">
+					  <a href="/agentpipeline.html"><img class="shadow" src="apboximage.jpg" width="100%" height="100%" >
+					  <h4>Agent Pipeline</h4></a>
 				  </td>
-				  <td style="padding: 0px 0px 20px 20px;">
-					  <img class="shadow" src="rlboximage.jpg" width="100%" height="100%" >
-					  <h4>Ranson Law Offices</h4>
+				  <td style="padding: 20px 0px 20px 20px;">
+					  <a href="/cjhughes.html"><img class="shadow" src="cjhughesboximage.jpg" width="100%" height="100%" >
+						  <h4>CJ Hughes</h4></a>
 				  </td>
-				  <td style="padding: 0px 0px 20px 20px;">
-					  <img class="shadow" src="slboximage.jpg" width="100%" height="100%" >
-					  <h4>Spilman Law</h4>
+				  <td style="padding: 20px 0px 20px 20px;">
+					  <a href="/concordu.html"><img class="shadow" src="cuboximage.jpg" width="100%" height="100%" >
+						  <h4>Concord University</h4></a>
 				  </td>
-				  <td style="padding: 0px 0px 20px 20px;">
-					  <img class="shadow" src="wvkcboximage.jpg" width="100%" height="100%" >
-					  <h4>West Virginia Kids Count</h4>
+				  <td style="padding: 20px 0px 20px 20px;">
+					  <a href="/greenbrier.html"><img class="shadow" src="gbrboximage.jpg" width="100%" height="100%" >
+					  <h4>Greenbrier Resort</h4></a>
 				  </td>
 				</tr>
 			</tbody>
