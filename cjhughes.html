@@ -69,8 +69,11 @@ h5 {
   padding: 15px 0px;
  }
  
-.sidenav a:hover {
-  color: #3790ba;
+.side-menu-text:hover  {
+  color: #3790ba !important;
+}
+.side-menu-text:active {
+  color: #3790ba !important;
 }
 	
 .logoimg {
@@ -192,10 +195,19 @@ h5 {
 		color: #272727;
         font-size: 20px;
 		line-height: 12px;
-		font-weight: normal;
+		font-weight: bold;
+}
+
+/*Google's link for other projects*/
+.otherprojects a:-webkit-any-link {
+	color:#307DA1 !important;
+}
+/* Hover color for other projects*/
+.otherprojects:hover {
+	color:#3790ba
 }
 	
-/* Responsive Design */
+/* Responsive Design  I AM WORKING ON THIS*/
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
@@ -203,35 +215,37 @@ h5 {
 }
 
 
+
+
 </style>
 </head>
 <body>
 
 <div class="sidenav">
-  <div class="logoimg"><img src="logoawwhite.png" alt="AW - Alexis Williams" width="150" height="100%"></div>
-  <div class="sidenav2top"><a href="/#home">
+  <div class="logoimg"><a href="/#home"><img src="logoawwhite.png" alt="AW - Alexis Williams" width="150" height="100%"></a></div>
+  <div class="sidenav2top"><a href="#home">
 	  <p><i class="fas fa-home"></i></p>
-	  <p>Home</p>
+	  <p class="side-menu-text">Home</p>
 	</a></div>
-  <div class="sidenav2"><a href="/#about">
+  <div class="sidenav2"><a href="#about">
 	  <p><i class="fas fa-user-alt"></i></p>
-	  <p>About</p>
+	  <p class="side-menu-text">About</p>
 	</a></div>
-  <div class="sidenav2"><a href="/#work">
+  <div class="sidenav2"><a href="#work" >
 	  <p><i class="fas fa-briefcase"></i></p>
-	  <p>Work</p>
+	  <p class="side-menu-text">Work</p>
 	</a></div>
-  <div class="sidenav2"><a href="/#experience">
+  <div class="sidenav2"><a href="#experience">
 	  <p><i class="far fa-lightbulb"></i></p>
-	  <p>Experience</p>
+	  <p class="side-menu-text">Experience</p>
 	</a></div>
-  <div class="sidenav2"><a href="/#skills">
+  <div class="sidenav2"><a href="#skills" class="side-menu-text">
 	  <p><i class="far fa-chart-bar"></i></p>
-	  <p>Skills</p>
+	  <p class="side-menu-text">Skills</p>
 	</a></div>
-  <div class="sidenav2"><a href="/#contact">
+  <div class="sidenav2"><a href="#contact">
 	  <p><i class="fas fa-phone"></i></p>
-	  <p>Contact</p>
+	  <p class="side-menu-text">Contact</p>
 	</a></div>
 </div>
 
@@ -245,9 +259,10 @@ h5 {
 		 <h1>CJ HUGHES.</h1>
          <p>CJ Hughes is an underground pipeline and construction contractor in West Virginia. The informational website displays safety, quality, production, rental, and sales information. I used the existing brochures and marketing campaign to design the website for a seamless company-wide look and feel.<br /><br />
 		 <i>This website may have changed since I’ve worked on the project. The image to the right is an accurate depiction of my work.</i></p>
+		<div style="text-align: center;"><a class="btns" href="https://www.cjhughes.com/" target="_blank">VISIT WEBSITE</a></div>
 		</td>
 		<td width="60%" style="text-align: center; padding: 30px;">
-		 <img class="shadow" src="CJHwebsitefinal.jpg" width="100%" height="100%" >
+		 <a href="https://www.cjhughes.com/" target="_blank"><img class="shadow" src="CJHwebsitefinal.jpg" width="100%" height="100%" ></a>
 		</td>
 	  </tr>
 	 </tbody>
