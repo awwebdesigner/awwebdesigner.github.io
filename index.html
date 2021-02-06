@@ -55,13 +55,6 @@ h5 {
     color: #e1e2e4; /* menu font color */
     display: block;	
 }
-
-.sidenav p a:hover  {
-  color: #3790ba !important;
-}
-.sidenav p a:active {
-  color: #3790ba !important;
-}
 	
 .sidenav {
   height: 100%;
@@ -86,14 +79,20 @@ h5 {
   border-bottom: 0px solid #4d585e;
   padding: 15px 0px;
  }
- 
+
+.side-menu-text:hover  {
+  color: #3790ba !important;
+}
+.side-menu-text:active {
+  color: #3790ba !important;
+}
 	
 .logoimg {
 	padding-bottom:30px;
 	padding-top:30px;
 }
 
-.fa, .fas {
+.fa, .fas, .far, .fab {
     font-weight: 900;
     font-size: 24px;
     color: #e1e2e4;
@@ -106,6 +105,11 @@ h5 {
 .fab:hover {
     color: #307DA1 !important;
 }
+	
+.far:hover {
+    color: #307DA1 !important;
+}	
+
 
 .icons {
 	padding-top:20px;
@@ -145,6 +149,7 @@ h5 {
 	font-weight: 400;
 }	
 	
+/* Buttons */	
 .btns {
 	background-color:#3790ba;
 	color:#fff;
@@ -156,7 +161,12 @@ h5 {
 }
 
 .btns:hover {
-		background-color:#CECFD1;
+		background-color:#307DA1;
+		color: #ffffff !important;
+}
+
+.btns .fas:hover {
+    color: #ffffff !important;
 }
 	
 .btns .fa, .fas {
@@ -383,27 +393,27 @@ h5 {
   <div class="logoimg"><a href="/#home"><img src="logoawwhite.png" alt="AW - Alexis Williams" width="150" height="100%"></a></div>
   <div class="sidenav2top"><a href="#home">
 	  <p><i class="fas fa-home"></i></p>
-	  <p>Home</p>
+	  <p class="side-menu-text">Home</p>
 	</a></div>
   <div class="sidenav2"><a href="#about">
 	  <p><i class="fas fa-user-alt"></i></p>
-	  <p>About</p>
+	  <p class="side-menu-text">About</p>
 	</a></div>
-  <div class="sidenav2"><a href="#work">
+  <div class="sidenav2"><a href="#work" class="side-menu-text">
 	  <p><i class="fas fa-briefcase"></i></p>
 	  <p>Work</p>
 	</a></div>
-  <div class="sidenav2"><a href="#experience">
+  <div class="sidenav2"><a href="#experience" class="side-menu-text">
 	  <p><i class="far fa-lightbulb"></i></p>
 	  <p>Experience</p>
 	</a></div>
-  <div class="sidenav2"><a href="#skills">
-	  <p><i class="far fa-chart-bar"></i></p>
-	  <p>Skills</p>
+  <div class="sidenav2"><a href="#skills" class="side-menu-text">
+	  <p class="side-menu-text"><i class="far fa-chart-bar">
+	  Skills</i></p>
 	</a></div>
   <div class="sidenav2"><a href="#contact">
-	  <p><i class="fas fa-phone"></i></p>
-	  <p>Contact</p>
+	  <p class="side-menu-text"><i class="fas fa-phone">
+	  Contact</i></p>
 	</a></div>
 </div>
 
